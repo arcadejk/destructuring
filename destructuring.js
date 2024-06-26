@@ -20,5 +20,21 @@ let {mike, jill, alicia} = jobs;
 console.log(mike, jill, alicia);
 
 // Destructuring subsets
+let languages = ["english", "french", "spanish", "japanese"];
+let [johnNative, johnSecondary] = languages;
+console.log(johnNative, johnSecondary);
+
+let [, , maryNative, marySecondary] = languages;
+console.log(maryNative, marySecondary);
+
+let languages2 = {
+    firstLanguages: "english",
+    secondLanguages: "french",
+    thirdLanguages: "german",
+    fourthLanguages: "japanese",
+}
+
+let [firstLanguages, secondLanguages] = languages2;
+console.log(firstLanguages, secondLanguages);
 
 // Using rest parameter syntax
