@@ -28,13 +28,28 @@ let [, , maryNative, marySecondary] = languages;
 console.log(maryNative, marySecondary);
 
 let languages2 = {
-    firstLanguages: "english",
-    secondLanguages: "french",
-    thirdLanguages: "german",
-    fourthLanguages: "japanese",
-}
-
-let [firstLanguages, secondLanguages] = languages2;
-console.log(firstLanguages, secondLanguages);
+    firstLanguage: "english",
+    secondLanguage: "french",
+    thirdLanguage: "german",
+    fourthLanguage: "japanese",
+};
+let { firstLanguage, secondLanguage } = languages2;
+console.log(firstLanguage, secondLanguage);
 
 // Using rest parameter syntax
+let fruits = ["apple", "orange", "banana", "peach", "cherry"];
+let [favorite, secondFavorite, ...others] = fruits;
+console.log(favorite);
+console.log(secondFavorite);
+console.log(others);
+
+let favoriteFoods = {
+    brian: "pizza",
+    anna: "pasta",
+    sarah: "vegetarian",
+    andrea: "steak",
+}
+let {brian, anna, ...rest} = favoriteFoods;
+console.log(brian);
+console.log(anna);
+console.log(rest);
